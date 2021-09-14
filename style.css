@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-sarif;
+  color: #000;
+  height: 100%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+}
+
+h1,
+h2,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: block;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin: 0;
+  padding: 0 0 4rem;
+}
+
+.signin {
+  font-size: 2.25rem;
+  background-color: #00aced;
+  /* border-radius: 20px; */
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 7% 7% 7% 7%;
+  border-radius: 4rem;
+}
+
+/**** No Need to change *****/
+.signin {
+  display: flex;
+  align-items: center;
+}
+
+.sign:hover {
+  background-color: rgb(27, 27, 179);
+}
+
+.section2 {
+  background-color: hsl(0deg, 0%, 96%);
+  font-size: 15px;
+  color: #000;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.emoji {
+  font-size: 25px;
+  margin-bottom: 3px;
+}
+
+.text a {
+  padding-left: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+
+.section3 {
+  background-color: white;
+  padding-top: 8rem;
+  padding-bottom: 7.5rem;
+}
+
+.hero-img > img {
+  width: 8rem;
+  padding-bottom: 4.8rem;
+}
+
+.hero-header > h1 {
+  font-size: 5.4rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+}
+
+.hero-subheader {
+  padding-top: 1rem;
+  width: 47.5rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.download {
+  padding: 0 2.4rem;
+  height: 4.4rem;
+  font-size: 1.8rem;
+  width: max-content;
+
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+
+  border: 0.1rem solid #000;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.download:hover {
+  background-color: white;
+  color: black;
+}
+
+.fab {
+  padding-left: 10px;
+  width: 15px;
+  fill: #fff;
+}
+
+.section-content {
+  display: grid;
+  justify-content: space-around;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section-header {
+  font-weight: 700;
+  color: white;
+}
+
+.sub-section {
+  margin-right: 5px;
+  padding: 16px 10px 16px 16px;
+  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.section-text1 {
+  font-weight: 500;
+}
+
+.section-text > div > div {
+  margin-left: 6px;
+  padding: 3px;
+  border: solid #fff;
+  border-width: 0 0.3rem 0.3rem 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.section4 {
+  background-color: hsl(194deg 100% 47%);
+  padding: 5rem 2.5rem;
+}
+
+.section5 {
+  padding: 5rem 2.5rem;
+  background-color: hsl(211deg 80% 30%);
+}
+
+.section4 .sub-section:hover {
+  background-color: hsl(194deg 100% 43%);
+}
+
+.section5 .sub-section:hover {
+  background-color: hsl(211deg 80% 27%);
+}
+
+/***********************************/
+
+@media screen and (min-device-width: 921px) {
+  .section3 {
+    padding-left: 13.5rem;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-between;
+  }
+
+  .section3-left {
+    padding-left: 1.6rem;
+  }
+
+  .section3-right {
+    background-image: url("image/Hero Image.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .section4,
+  .section5 {
+    padding: 6.5rem 10rem 6.5rem 13.5rem;
+  }
+
+  .section-header {
+    font-size: 3.6rem;
+    padding-bottom: 4rem;
+    padding-left: 1.6rem;
+  }
+
+  .section-img {
+    width: 6.4rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .section-content {
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  }
+
+  .section-text > div {
+    padding: 0.3rem 0;
+  }
+  .section-text {
+    font-size: 1.5rem;
+  }
+
+  .section-text1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-device-width: 721px) and (max-device-width: 920px) {
+  .section2 {
+    font-size: 1.8rem;
+    height: 5rem;
+  }
+
+  .emoji {
+    font-size: 2.4rem;
+  }
+
+  .text a {
+    padding-left: 0.5rem;
+  }
+
+  .section3-left {
+    display: grid;
+    grid-template-columns: 15% 70%;
+    justify-content: space-evenly;
+  }
+
+  .section-header {
+    font-size: 3.6rem;
+    padding-bottom: 4rem;
+    padding-left: 1.6rem;
+  }
+
+  .section-img {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-content {
+    grid-template-columns: 19% 19% 19% 19% 19%;
+  }
+
+  .section-text {
+    font-size: 1.4rem;
+  }
+
+  .section-text1 {
+    font-size: 1.45rem;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 720px) {
+  .hero-header > h1 {
+    font-size: 4rem;
+  }
+
+  .section2 {
+    font-size: 1.9rem;
+    height: 5rem;
+  }
+
+  .emoji {
+    font-size: 2.5rem;
+  }
+
+  .text a {
+    padding-left: 0.5rem;
+  }
+
+  .section3-left {
+    display: grid;
+    grid-template-columns: 15% 70%;
+    justify-content: space-evenly;
+  }
+
+  .section-header {
+    font-size: 3.6rem;
+    padding-bottom: 4rem;
+    padding-left: 1.6rem;
+  }
+
+  .section-img {
+    width: 9.6rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .section-content {
+    grid-template-columns: 22% 22% 22% 22%;
+  }
+
+  .section-text {
+    font-size: 1.3rem;
+  }
+
+  .section-text1 {
+    font-size: 1.35rem;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  li {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+
+  .section1 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: center;
+  }
+
+  .paytm-logo img {
+    width: 20rem;
+  }
+
+  .nav-link > ul {
+    margin: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .signin {
+    font-size: 2.25rem;
+    background-color: #00aced;
+    /* border-radius: 20px; */
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3% 6% 3% 6%;
+    border-radius: 4rem;
+  }
+
+  .section2 {
+    font-size: 2rem;
+    height: 5.5rem;
+  }
+
+  .emoji {
+    font-size: 2.5rem;
+  }
+
+  .text a {
+    padding-left: 0.5rem;
+  }
+
+  .section3 .section3-left {
+    display: grid;
+    grid-template-columns: 15% 70%;
+    justify-content: space-evenly;
+  }
+
+  .section-header {
+    font-size: 3.6rem;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  .section-img {
+    width: 12rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-content {
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  .section-text {
+    font-size: 1.2rem;
+  }
+
+  .section-text1 {
+    font-size: 1.25rem;
+  }
+}
