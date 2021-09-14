@@ -30,9 +30,25 @@ h1 {
   padding: 0 0 4rem;
 }
 
+.main-container>.sub-container:nth-child(1) {
+  padding: 4rem 0rem 3rem 0rem;
+  box-shadow: 0 5px 20px rgb(0 41 112 / 10%);
+}
+
+.section1 {
+  height: 6.5rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+}
+
 .signin {
   font-size: 2.25rem;
   background-color: #00aced;
+  color: #fff;
   /* border-radius: 20px; */
   display: flex;
   flex-direction: column-reverse;
@@ -46,8 +62,9 @@ h1 {
   align-items: center;
 }
 
-.sign:hover {
+.signin:hover {
   background-color: rgb(27, 27, 179);
+  color: #fff;
 }
 
 .section2 {
@@ -184,6 +201,40 @@ h1 {
 /***********************************/
 
 @media screen and (min-device-width: 921px) {
+  .main-container>.sub-container:nth-child(1){
+    width: 100%;
+  }
+
+  .section1 {
+    padding-left: 13.5rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-between;
+  }
+
+  .paytm-logo img {
+    width: 15rem;
+  }
+
+  .nav-link > ul {
+    display: none;
+  }
+
+  .signin {
+    font-size: 2rem;
+    background-color: #00aced;
+    justify-self: end;
+    align-self: center;
+    margin-right: 5%;
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 4rem;
+  }
+
+  .section2 {
+    font-size: 1.5rem;
+    height: 4.8rem;
+  }
   .section3 {
     padding-left: 13.5rem;
     display: grid;
@@ -234,6 +285,31 @@ h1 {
 }
 
 @media screen and (min-device-width: 721px) and (max-device-width: 920px) {
+  .section1 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 100%;
+    justify-content: center;
+  }
+
+  .paytm-logo img {
+    width: 15rem;
+  }
+
+  .nav-link > ul {
+    display: none;
+  }
+
+  .signin {
+    font-size: 2rem;
+    background-color: #00aced;
+    justify-self: end;
+    align-self: center;
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 4rem;
+  }
+
   .section2 {
     font-size: 1.8rem;
     height: 5rem;
@@ -278,12 +354,37 @@ h1 {
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 720px) {
+  .section1 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 100%;
+    justify-content: center;
+  }
+
+  .paytm-logo img {
+    width: 15rem;
+  }
+
+  .nav-link > ul {
+    display: none;
+  }
+
+  .signin {
+    font-size: 2rem;
+    background-color: #00aced;
+    justify-self: end;
+    align-self: center;
+    padding: 1.5% 3% 1.5% 3%;
+    border-radius: 4rem;
+  }
+
   .hero-header > h1 {
     font-size: 4rem;
   }
 
   .section2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     height: 5rem;
   }
 
@@ -326,41 +427,34 @@ h1 {
 }
 
 @media screen and (max-device-width: 480px) {
-  li {
-    list-style: none;
-    font-size: 1.5rem;
-  }
-
   .section1 {
     background-color: white;
     display: grid;
     grid-template-columns: 50% 40%;
+    grid-template-rows: 100%;
     justify-content: center;
+    align-content: center;
   }
 
   .paytm-logo img {
-    width: 20rem;
+    width: 15rem;
   }
 
   .nav-link > ul {
-    margin: 1.5rem 1rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    display: none;
   }
 
   .signin {
-    font-size: 2.25rem;
+    font-size: 2.4rem;
     background-color: #00aced;
-    /* border-radius: 20px; */
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 3% 6% 3% 6%;
+    justify-self: end;
+    align-self: center;
+    padding: 1.5% 3% 1.5% 3%;
     border-radius: 4rem;
   }
 
   .section2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     height: 5.5rem;
   }
 
