@@ -30,6 +30,10 @@ h1 {
   padding: 0 0 4rem;
 }
 
+span, a{
+  font-weight: 500;
+}
+
 .main-container>.sub-container:nth-child(1) {
   padding: 4rem 0rem 3rem 0rem;
   box-shadow: 0 5px 20px rgb(0 41 112 / 10%);
@@ -38,11 +42,9 @@ h1 {
 .section1 {
   height: 6.5rem;
   background: #fff;
-  position: sticky;
+  position: sticky; 
   top: 0;
   z-index: 4;
-  display: flex;
-  align-items: center;
 }
 
 .signin {
@@ -56,7 +58,6 @@ h1 {
   border-radius: 4rem;
 }
 
-/**** No Need to change *****/
 .signin {
   display: flex;
   align-items: center;
@@ -75,7 +76,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .emoji {
@@ -83,11 +84,15 @@ h1 {
   margin-bottom: 3px;
 }
 
-.text a {
+.section2-text a {
   padding-left: 5px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 1.6rem;
   color: #000;
+}
+
+.section2-text a:hover {
+  color: hsl(0deg, 0%, 60%);
 }
 
 .section3 {
@@ -198,18 +203,43 @@ h1 {
   background-color: hsl(211deg 80% 27%);
 }
 
-/***********************************/
+/****************** Media Screen *****************/
 
 @media screen and (min-device-width: 921px) {
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0rem;
+  }
+  
+  ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-right: 5px;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  ul li a:hover {
+    color: hsl(0deg, 0%, 65%);
+  }
+
   .main-container>.sub-container:nth-child(1){
     width: 100%;
   }
 
   .section1 {
     padding-left: 13.5rem;
-    background-color: white;
     display: grid;
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 20% 65% 15%;
     justify-content: space-between;
   }
 
@@ -217,24 +247,25 @@ h1 {
     width: 15rem;
   }
 
-  .nav-link > ul {
-    display: none;
+  .nav-link {
+    width: 100%;
+    justify-self: space-between;
   }
-
+  
   .signin {
     font-size: 2rem;
     background-color: #00aced;
-    justify-self: end;
+    justify-self: center;
     align-self: center;
     margin-right: 5%;
-    padding: 1.5% 3% 1.5% 3%;
+    padding: 3% 6% 3% 6%;
     border-radius: 4rem;
   }
 
-  .section2 {
-    font-size: 1.5rem;
-    height: 4.8rem;
+  .signin>span {
+    text-align: center;
   }
+
   .section3 {
     padding-left: 13.5rem;
     display: grid;
@@ -286,7 +317,6 @@ h1 {
 
 @media screen and (min-device-width: 721px) and (max-device-width: 920px) {
   .section1 {
-    background-color: white;
     display: grid;
     grid-template-columns: 50% 40%;
     grid-template-rows: 100%;
@@ -304,23 +334,11 @@ h1 {
   .signin {
     font-size: 2rem;
     background-color: #00aced;
+    grid-area: 1 / 2 / span 1 / span 1;
     justify-self: end;
     align-self: center;
     padding: 1.5% 3% 1.5% 3%;
     border-radius: 4rem;
-  }
-
-  .section2 {
-    font-size: 1.8rem;
-    height: 5rem;
-  }
-
-  .emoji {
-    font-size: 2.4rem;
-  }
-
-  .text a {
-    padding-left: 0.5rem;
   }
 
   .section3-left {
@@ -355,7 +373,6 @@ h1 {
 
 @media screen and (min-device-width: 481px) and (max-device-width: 720px) {
   .section1 {
-    background-color: white;
     display: grid;
     grid-template-columns: 50% 40%;
     grid-template-rows: 100%;
@@ -373,6 +390,7 @@ h1 {
   .signin {
     font-size: 2rem;
     background-color: #00aced;
+    grid-area: 1 / 2 / span 1 / span 1;
     justify-self: end;
     align-self: center;
     padding: 1.5% 3% 1.5% 3%;
@@ -381,19 +399,6 @@ h1 {
 
   .hero-header > h1 {
     font-size: 4rem;
-  }
-
-  .section2 {
-    font-size: 2rem;
-    height: 5rem;
-  }
-
-  .emoji {
-    font-size: 2.5rem;
-  }
-
-  .text a {
-    padding-left: 0.5rem;
   }
 
   .section3-left {
@@ -428,7 +433,6 @@ h1 {
 
 @media screen and (max-device-width: 480px) {
   .section1 {
-    background-color: white;
     display: grid;
     grid-template-columns: 50% 40%;
     grid-template-rows: 100%;
@@ -447,23 +451,11 @@ h1 {
   .signin {
     font-size: 2.4rem;
     background-color: #00aced;
+    grid-area: 1 / 2 / span 1 / span 1;
     justify-self: end;
     align-self: center;
     padding: 1.5% 3% 1.5% 3%;
     border-radius: 4rem;
-  }
-
-  .section2 {
-    font-size: 2.2rem;
-    height: 5.5rem;
-  }
-
-  .emoji {
-    font-size: 2.5rem;
-  }
-
-  .text a {
-    padding-left: 0.5rem;
   }
 
   .section3 .section3-left {
